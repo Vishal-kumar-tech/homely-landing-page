@@ -1,0 +1,837 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(115, 59, 19);
+    padding: 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-1{
+width: 97%;
+height: 97%;
+background: #FBFBFB;
+box-sizing: border-box;
+overflow: auto;
+border-radius: 15px;
+padding: 0 10px;
+}
+
+nav{
+    width: 100%;
+    height: 55px;
+    /* padding: 10px 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .left i{
+    font-size: 28px;
+}
+
+.left h1{
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+
+}
+
+nav .links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.btn{
+    display: flex;
+    gap: 10px;
+}
+.btn button{
+   padding: 10px 30px;
+   font-size: 18px;
+   cursor: pointer;
+
+   /*for glassomorphism look */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn button:hover{
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    color: black;
+}
+
+.glass-btn:active{
+    transform: translateY(0);
+}
+
+.btn .btn-dark{
+    background-color: #000;
+    color: white;
+}
+
+.btn a{
+    text-decoration: none;
+}
+
+.hero{
+    width: 100%;
+    height: calc(97% - 32.55px); /*bcz sahi height ke liye parent ki height minus usme jo content tha pehele usme nav tha or nav ki height nahi thii but padding thi y axis me 10px so 100px - 10px */
+    background-color: #e5ecec;
+    border-radius: 16px;
+    display: flex;
+    overflow: hidden;
+    padding: 15px 10px;
+}
+
+.hero-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-evenly;
+    /* background-color: #000; */
+}
+
+.rating{
+    padding: 10px 30px;
+    display: flex;
+    background-color: white;
+    width: fit-content;
+    border-radius: 50px;
+    gap: 10px;
+}
+
+.rating i{
+    font-size: 25px;
+}
+
+.rating-text{
+    font-size: 16px;
+}
+
+.rating-text span{
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.hero-left h1{
+    font-size: 100px;
+    line-height: 90px;
+}
+
+.hero-left p{
+    font-size: 20px;
+    color: #7a7c7c;
+     width: 90%;
+}
+
+.hero-left .btn button{
+    padding: 15px 37px;
+    border-radius: 30px;
+    /* font-size: 25px; */
+}
+.btn #arrow-right{
+  background-color: black;
+  color: #16c9ba;
+  font-size: 24px;
+}
+
+.logos{
+display: flex;
+justify-content: space-evenly;
+/* gap: 10px; */
+}
+
+.hero-left .logos img{
+    height: 130px;
+    width: 140px;
+
+}
+
+.brands h3{
+font-size: 27px;
+}
+.hero-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: #921212; */
+}
+
+.right-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.right-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#section-2{
+    width: 100%;
+    height: fit-content;
+    padding: 15px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.marquee{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 24%;
+    height: 320px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #e0ecec;
+}
+
+.card .marquee-img{
+width: 100%;
+height: 90%;
+background-image: url(https://plus.unsplash.com/premium_photo-1661963457608-70ea14d6db7c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D);
+background-size: cover;
+background-position: center;
+border-radius: 10px;
+display: flex;
+justify-content: end;
+padding: 10px;
+}
+
+.card .marquee-txt{
+    display: flex;
+    margin-top: 14px;
+    justify-content: space-between;
+}
+
+.marquee-txt p{
+    color: #a4a3a3;
+}
+
+.marquee-img i{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #feffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.card:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 30px;
+} 
+.card:nth-child(2) .marquee-img{
+    background-image: url(https://images.unsplash.com/photo-1604580040660-f0a7f9abaea6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D);
+} 
+.card:nth-child(4) .marquee-img{
+    background-image: url(https://images.unsplash.com/photo-1696987026455-c2c7555ca10f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D);
+} 
+
+.explore{
+    display: flex;
+    gap: 10px;
+}
+
+.explore i{
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3{
+      width: 100%;
+     height: fit-content;
+     padding: 80px 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.section-3 .accomodation-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+}
+.accomodation-txt h5{
+opacity: 0.5;
+font-size: 19px;
+letter-spacing: 2.5px;
+line-height: 50px;
+}
+.accomodation-txt h1{
+font-size: 70px;
+font-weight: 300;
+}
+
+.variety-links{
+    background-color: #e5ecec;
+    border-radius: 10px;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20%;
+}
+.variety-links a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.variety-links :nth-child(1){
+  background-color: #f8fdfc;
+  padding: 15px 80px;
+  border-radius: 10px;
+
+}
+
+.variety-shelf .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 12px;
+}
+
+.menu{
+    margin-top: 18px;
+    background-color: #e5ecec;
+}
+
+.menu .card-1{
+    width: 24%;
+    height: 320px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+}
+
+.card-1 .card-1-img{
+    width: 100%;
+height: 90%;
+background-size: cover;
+background-position: center;
+border-radius: 10px;
+display: flex;
+justify-content: end;
+padding: 10px;
+background-image: url(https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D);
+}
+
+.card-2{
+   width: 24%;
+    height: 320px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-2 .card-2-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-2 .host{
+    display: flex;
+    gap: 5px;
+}
+.card-2 .host i{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 2px;
+}
+
+.card-2 .card-2-txt h5{
+color: #a4a3a3;
+}
+.card-2 .card-2-txt h2{
+font-weight: 400;
+}
+
+.card-1-rating{
+    padding: 10px 10px;
+    display: flex;
+    background-color: white;
+    width: fit-content;
+    border-radius: 50px;
+    gap: 4px;
+    height: fit-content;
+    font-size: 13px;
+}
+
+.card-1-rating i{
+    font-size: 15px;
+    color: #ffc107;
+}
+
+.card-3{
+     width: 24%;
+    height: 320px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.card-3 .charges{
+    height: fit-content;
+}
+.card-3 .charges h2{
+    font-size: 30px;
+    font-weight: 530;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.card-3 .charges h5{
+    font-size: 15px;
+    font-weight: 200;
+    color: #7a7c7c;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.card-3 .basic-info{
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+.card-3 .specifications{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.card-3 .specification-1, .specification-2{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-top: 15px;
+}
+
+.card-3 .specification-1{
+    width: 55%;
+}
+
+.card-3 .specification-2{
+    width: 45%;
+    text-align: right;
+}
+
+
+.card-3 .specification-2 a{
+   text-decoration: none;
+   font-size: 15px;
+   color: #555;
+   white-space: nowrap;
+}
+
+
+.card-4{
+    width: 24%;
+    height: 320px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    
+}
+.clean{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.amenities{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-4 h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-4 p{
+    font-size: 15px;
+    color: #7a7c7c;
+}
+
+.card-4 #book-now{
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: #000;
+    color: whitesmoke;
+    font-size: 22px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-weight: 500;
+}
+
+.menu-2{
+     margin-top: 18px;
+    background-color: #e5ecec;
+     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 12px;
+}
+
+.menu-2 .card{
+    width: 24%;
+    height: 320px;
+    position: relative;
+    border-radius: 10px;
+    padding: 0;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+
+.menu-2 .card-2{
+    padding: 10px 10px;
+}
+
+.menu-2 .card-3{
+    padding: 10px;
+}
+
+.menu-2 .card-4{
+    padding: 10px;
+}
+
+ .menu-2 .card-img{
+ position: absolute;
+ inset: 0;
+}
+
+.menu-2 .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-2 .card-rating{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;              /* image ke upar dikhane ke liye */
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 8px;
+    border-radius: 20px;
+    background-color: rgba(255, 253, 253, 0.6);
+    color: #111010;
+    font-size: 14px;
+}
+.menu-2 .card-rating i{
+    color: #ffc107;          /* star ka yellow color */
+}
+
+
+.menu-2 .card-4 .book-now{
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: #000;
+    color: whitesmoke;
+    font-size: 22px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-weight: 500;
+}
+/* ===== Circle hover effect: only text wale cards par (card-2, 3, 4) ===== */
+.menu .card-2,
+.menu .card-3,
+.menu .card-4,
+.menu-2 .card-2,
+.menu-2 .card-3,
+.menu-2 .card-4{
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;          /* ::before card ke andar hi rahe, background ke upar */
+}
+
+.menu .card-2::before,
+.menu .card-3::before,
+.menu .card-4::before,
+.menu-2 .card-2::before,
+.menu-2 .card-3::before,
+.menu-2 .card-4::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 170%;                 /* itna bada ki circle card ke corners tak pahunch jaye */
+    aspect-ratio: 1 / 1;         /* perfect circle */
+    border-radius: 50%;
+    background-color: #243b53; 
+    transform: translate(-50%, -50%) scale(0);   /* center me ek point */
+    transition: transform 0.7s ease;
+    z-index: -1;
+}
+
+.menu .card-2:hover::before,
+.menu .card-3:hover::before,
+.menu .card-4:hover::before,
+.menu-2 .card-2:hover::before,
+.menu-2 .card-3:hover::before,
+.menu-2 .card-4:hover::before{
+    transform: translate(-50%, -50%) scale(1);   /* poore card me fail jaye */
+}
+
+/* text color smooth change */
+.card-2, .card-3, .card-4,
+.card-2 *, .card-3 *, .card-4 *{
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+.menu .card-2:hover, .menu-2 .card-2:hover,
+.menu .card-3:hover, .menu-2 .card-3:hover,
+.menu .card-4:hover, .menu-2 .card-4:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-2:hover h2, .card-2:hover h5,
+.card-3:hover h2, .card-3:hover h5, .card-3:hover a,
+.card-4:hover h2, .card-4:hover p{
+    color: #fff;
+}
+
+/* card-2 ka host icon: dark background pe white dikhe */
+.card-2:hover .host i{
+    background-color: #fff;
+    color: #243b53;
+}
+
+/* card-4 ka button: dark background pe alag dikhe */
+.card-4:hover #book-now{
+    background-color: #fff;
+    color: #243b53;
+}
+.card-4:hover .book-now{
+    background-color: #fff;
+    color: #243b53;
+}
+
+
+/* ===== Responsive ===== */
+
+/* Tablet: 1024px tak */
+@media (max-width: 1024px){
+    .hero-left h1{
+        font-size: 70px;
+        line-height: 68px;
+    }
+    .hero-left p{
+        font-size: 18px;
+    }
+    .accomodation-txt h1{
+        font-size: 50px;
+    }
+
+    /* cards: 4 ki jagah 2 per row */
+    .marquee,
+    .menu,
+    .menu-2{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .marquee .card,
+    .menu .card-1, .menu .card-2, .menu .card-3, .menu .card-4,
+    .menu-2 .card, .menu-2 .card-2, .menu-2 .card-3, .menu-2 .card-4{
+        width: calc(50% - 8px);
+    }
+}
+
+/* Mobile landscape / chhota tablet: 768px tak */
+@media (max-width: 768px){
+    /* nav links chhupa do (hamburger chahiye to alag se banayenge) */
+    nav .links{
+        display: none;
+    }
+
+    /* hero: side-by-side ki jagah upar-neeche */
+    .hero{
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    .hero-left,
+    .hero-right{
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+    .right-img{
+        height: 300px;
+    }
+
+    .hero-left h1{
+        font-size: 52px;
+        line-height: 52px;
+    }
+    .hero-left p{
+        width: 100%;
+        font-size: 16px;
+    }
+    .hero-left .logos img{
+        height: 80px;
+        width: 90px;
+    }
+    .brands h3{
+        font-size: 20px;
+    }
+
+    .section-3{
+        padding: 40px 9px;
+    }
+    .accomodation-txt h1{
+        font-size: 36px;
+        text-align: center;
+    }
+    .accomodation-txt h5{
+        font-size: 15px;
+    }
+
+    .variety-links{
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto;
+    }
+    .variety-links :nth-child(1){
+        padding: 12px 30px;
+    }
+}
+
+/* Mobile: 480px tak */
+@media (max-width: 480px){
+    #section-1{
+        width: 100%;
+        height: 100%;
+        padding: 0 8px;
+    }
+    main{
+        padding: 4px;
+    }
+
+    nav .left h1{
+        font-size: 22px;
+    }
+    .btn button{
+        padding: 8px 16px;
+        font-size: 15px;
+    }
+    .hero-left .btn button{
+        padding: 12px 22px;
+    }
+
+    .hero-left h1{
+        font-size: 40px;
+        line-height: 42px;
+    }
+    .rating{
+        padding: 8px 16px;
+    }
+
+    /* cards: 1 per row */
+    .marquee .card,
+    .menu .card-1, .menu .card-2, .menu .card-3, .menu .card-4,
+    .menu-2 .card, .menu-2 .card-2, .menu-2 .card-3, .menu-2 .card-4{
+        width: 100%;
+    }
+
+    .accomodation-txt h1{
+        font-size: 28px;
+    }
+}
+
+/* Touch devices: hover wala circle effect sirf mouse wale devices pe hi ho */
+@media (hover: none){
+    .menu .card-2:hover::before,
+    .menu .card-3:hover::before,
+    .menu .card-4:hover::before,
+    .menu-2 .card-2:hover::before,
+    .menu-2 .card-3:hover::before,
+    .menu-2 .card-4:hover::before{
+        transform: translate(-50%, -50%) scale(0);
+    }
+    .card-2:hover h2, .card-2:hover h5,
+    .card-3:hover h2, .card-3:hover h5, .card-3:hover a,
+    .card-4:hover h2, .card-4:hover p{
+        color: inherit;
+    }
+}
