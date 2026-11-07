@@ -3,7 +3,7 @@
 
 A responsive landing page for an accommodation booking website, built using **HTML and CSS**. Users can explore different types of stays (villas, apartments, mansions, cottages) with details like rating, price, amenities and a Book Now option.
 
-🔗 **Live Demo:** [yahan GitHub Pages ka link daalo, baad me]
+🔗 **Live Demo:**(https://vishal-kumar-tech.github.io/homely-landing-page/)
 
 ## ✨ Features
 
