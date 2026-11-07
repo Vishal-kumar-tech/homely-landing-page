@@ -37,7 +37,7 @@ homely/
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/[tumhara-username]/[repo-name].git
+   git clone(https://github.com/Vishal-kumar-tech/homely-landing-page)
    ```
 2. Open the project folder
 3. Open `index.html` in any browser
@@ -59,4 +59,4 @@ homely/
 
 **[Tumhara Naam]**
 [Course / College Name]
-GitHub: [@tumhara-username](https://github.com/[tumhara-username])
+GitHub: [@tumhara-username](https://github.com/Vishal-kumar-tech)
